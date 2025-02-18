@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+  }
+  .boss{
+    text-decoration: underline;
+    text-decoration-color:#FF5722;
+    font-size: 33px;
+    color:#FFFFFF;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .summary h2{
+    text-decoration: underline;
+    text-decoration-color:#FF5722;
+    font-size: 33px;
+  }
+  p{
+    font-size: 20px;
+  }
+  nav {
+    background-color: #0A0A0A;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 4px #FF5722;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  nav a {
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: all 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #B0B0B0;
+    color: #333;
+    transform: scale(1.1);
+  }
+  
+  nav a.active {
+    background-color: #B0B0B0;
+    color: #333;
+    transform: scale(1.1);
+  }
+
+  nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #FF5722;
+    transition: width 0.3s;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .search-bar {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .search-button:hover {
+    background-color: #FF3D00;
+  }
+  .banner img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .banner .header{
+    color: #FFE140;
+    text-shadow: 1px 1px 2px #0A0A0A, 0 0 25px #BFA100, 0 0 5px #806C00;
+    padding: 30px;
+    font-size: 60px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+  } 
+  .banner .header span{
+    font-size: 1.4em;
+  }
+  .summary .characters,p{
+    text-align: center;
+    color:#FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .summary .characters,h2{
+    text-align: center;
+    color:#FFFFFF;
+  }
+  ul{
+    list-style-type: none;
+  }
+.characters{
+    display: flex;         
+  justify-content: center;
+  gap: 10px; 
+}
+.characters img{
+    border-radius: 50%;
+    max-width: 100%;
+    width: 16%;
+    max-width: 100%;
+    height: auto;  
+    padding: 10px;
+}
+.inline p{
+    display: inline;
+}
+.gd{
+    text-align:left;
+    padding-left: 175px;
+}
+.mk{
+    padding-left: 105px;
+}
+.mes{
+    padding-left: 65px;
+}
+.ml{
+    padding-left: 25px;
+    padding-right: 20px;
+}
+ul{
+    color:#FFFFFF
+}
+
+footer{
+    background: #141414;
+    color: white;
+     padding: 10px;
+     text-align: center;
+     padding-top: 25px;
+    }
